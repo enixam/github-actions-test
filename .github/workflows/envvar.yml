@@ -11,7 +11,3 @@ jobs:
         run: echo $GITHUB_REPOSITORY
       - name: the GITHUb object
         run: echo "${{ GITHUB.token }}"
-      - name: git clone
-        run: |
-          git clone git@github:$GITHUB_REPOSITORY
-          git checkout $GITHUB_SHA
