@@ -1,0 +1,16 @@
+name: Print Environment Variables
+
+jobs:
+  github-variables:
+    runs-on: ubuntu-latest
+    steps:
+      - name: commit id
+        run: echo $GITHUB_SHA
+      - name: user and repo name
+        run: echo $GITHUB_REPOSITORY
+      - name: the GITHUb object
+        run: echo "${{ GITHUB.token }}"
+      - name: git clone
+        run: |
+          git clone git@github:$GITHUB_REPOSITORY
+          git checkout $GITHUB_SHA

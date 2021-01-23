@@ -8,6 +8,7 @@ jobs:
       - name: list files before checkout
         run: ls -a
       - name: checkout
+        # clone this repo into runner folder
         uses: actions/checkout@v1
       - name: list files after checkout
         run: ls -a
