@@ -1,4 +1,5 @@
 name: Print Environment Variables
+on: ["push"]
 
 jobs:
   github-variables:
