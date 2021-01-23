@@ -16,3 +16,12 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: direcotry location
+        run: Get-Location
+      - name: pwd
+        run: pwd
+        shell: bash
