@@ -20,8 +20,8 @@ jobs:
   run-windows-commands:
     runs-on: windows-latest
     steps:
-      - name: direcotry location
+      - name: direcotry location using powershell
         run: Get-Location
-      - name: pwd
+      - name: direcotry location using bash
         run: pwd
         shell: bash
